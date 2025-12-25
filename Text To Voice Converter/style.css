@@ -87,3 +87,17 @@ select{
     background-position-y: 20px;
 
 }
+
+.credit{
+    margin-top: 28px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.6);
+}
+
+.credit span{
+    color: #7CFF7C;
+    font-weight: 600;
+}
+
