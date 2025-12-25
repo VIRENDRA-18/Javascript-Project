@@ -57,4 +57,31 @@ button{
     color: #fff;
     font-size: 16px;
     padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url ('images/dropdown.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px) ;
 }
