@@ -85,5 +85,21 @@
     content: 'SEC'; 
 }            
 
+.credit{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+}
+
+.credit span{
+    color: #6cf0ff;
+    font-weight: 600;
+}
+
+
+
 
 
