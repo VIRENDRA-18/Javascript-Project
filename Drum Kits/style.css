@@ -5,7 +5,16 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
-  background-color: pink;
+  background: linear-gradient(-45deg, #1c1c1c, #3a0f0f, #1c1c1c);
+  background-size: 300% 300%;
+  animation: bgMove 16s ease infinite;
+background: linear-gradient(
+    180deg,
+    #2f5d6b 0%,
+    #2a5562 40%,
+    #234a56 70%,
+    #1e404a 100%
+  );
 }
 
 h1 {
