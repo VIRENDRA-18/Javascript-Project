@@ -46,3 +46,41 @@ h1 {
 .btn:active {
   background-size: 105%;
 }
+
+/* 📱 Mobile only */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 16px 22px;
+    font-size: 18px;
+    min-width: 130px;
+  }
+}
+
+/* 👇 Footer credit */
+.credit {
+  position: fixed;
+  bottom: 10px;
+  padding: 6px 14px;
+  background: #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #333;
+  box-shadow: 0 3px 8px rgba(0,0,0,.3);
+}
+
+.credit span {
+  color: #3a0ca3; /* dark purple */
+  font-weight: bold;
+}
