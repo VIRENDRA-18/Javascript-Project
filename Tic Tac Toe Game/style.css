@@ -129,3 +129,75 @@ footer{
   from{transform:translateY(-20px) rotate(0deg);}
   to{transform:translateY(100vh) rotate(720deg);}
 }
+
+.credit{
+  margin-top:16px;
+  text-align:center;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:0.6px;
+
+  background: linear-gradient(90deg, #31c3bd, #f2b137);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  opacity:0.9;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 480px){
+
+  body{
+    padding:16px;
+  }
+
+  .app{
+    width:100%;
+    max-width:320px;
+  }
+
+  .logo span{
+    font-size:22px;
+  }
+
+  .turn{
+    padding:6px 12px;
+    font-size:14px;
+  }
+
+  .restart{
+    padding:6px 10px;
+    font-size:14px;
+  }
+
+  .board{
+    gap:12px;
+  }
+
+  .cell{
+    height:90px;
+    font-size:42px;
+    border-radius:10px;
+  }
+
+  .result{
+    font-size:16px;
+    margin-bottom:12px;
+  }
+
+  footer{
+    gap:10px;
+    margin-top:16px;
+  }
+
+  .score{
+    font-size:13px;
+    padding:8px;
+  }
+
+  .credit{
+    font-size:13px;
+    margin-top:14px;
+  }
+}
+
