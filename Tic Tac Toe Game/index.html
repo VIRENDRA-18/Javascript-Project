@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-<!-- CONFETTI LAYER -->
-<div id="confetti-container"></div>
+    <!-- CONFETTI LAYER -->
+    <div id="confetti-container"></div>
 
-<div class="app">
+    <div class="app">
 
-  <header>
-    <div class="logo">
-      <span class="x">X</span>
-      <span class="o">O</span>
+        <!-- GAME HEADING -->
+        <h1 class="game-title">TIC TAC TOE</h1>
+
+        <header>
+            <div class="logo">
+                <span class="x">X</span>
+                <span class="o">O</span>
+            </div>
+            <div class="turn">X TURN</div>
+            <button class="restart">↻</button>
+        </header>
+
+        <!-- RESULT TEXT -->
+        <p class="result"></p>
+
+        <div class="board">
+            <div class="cell" data-i="0"></div>
+            <div class="cell" data-i="1"></div>
+            <div class="cell" data-i="2"></div>
+            <div class="cell" data-i="3"></div>
+            <div class="cell" data-i="4"></div>
+            <div class="cell" data-i="5"></div>
+            <div class="cell" data-i="6"></div>
+            <div class="cell" data-i="7"></div>
+            <div class="cell" data-i="8"></div>
+        </div>
+
+        <footer>
+            <div class="score x-score">X<br><strong>0</strong></div>
+            <div class="score tie">TIES<br><strong>0</strong></div>
+            <div class="score o-score">O<br><strong>0</strong></div>
+        </footer>
+
+        <p class="credit"> © 2026 | Designed by Virendra</p>
+
     </div>
-    <div class="turn">X TURN</div>
-    <button class="restart">↻</button>
-  </header>
 
-  <!-- RESULT TEXT -->
-  <p class="result"></p>
-
-  <div class="board">
-    <div class="cell" data-i="0"></div>
-    <div class="cell" data-i="1"></div>
-    <div class="cell" data-i="2"></div>
-    <div class="cell" data-i="3"></div>
-    <div class="cell" data-i="4"></div>
-    <div class="cell" data-i="5"></div>
-    <div class="cell" data-i="6"></div>
-    <div class="cell" data-i="7"></div>
-    <div class="cell" data-i="8"></div>
-  </div>
-
-  <footer>
-    <div class="score x-score">X<br><strong>0</strong></div>
-    <div class="score tie">TIES<br><strong>0</strong></div>
-    <div class="score o-score">O<br><strong>0</strong></div>
-  </footer>
-
-  <p class="credit"> © 2026 | Designed by Virendra</p>
-
-</div>
-
-<script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
