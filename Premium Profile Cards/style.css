@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===============================
+   LUXURY DARK BACKGROUND
+================================ */
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  color: #f5f5f5;
+
+  /* luxury black + gold glow */
+  background:
+    linear-gradient(
+      135deg,
+      transparent 55%,
+      rgba(255, 183, 77, 0.35) 60%,
+      transparent 65%
+    ),
+    linear-gradient(
+      -135deg,
+      transparent 55%,
+      rgba(255, 193, 120, 0.25) 60%,
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse at center,
+      rgba(255,255,255,0.04),
+      rgba(0,0,0,0.9) 70%
+    ),
+    #0a0d12;
+}
+
+/* ===============================
+   HEX / HONEYCOMB TEXTURE
+================================ */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(30deg, rgba(255,255,255,0.04) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.04) 87.5%, rgba(255,255,255,0.04)),
+    linear-gradient(150deg, rgba(255,255,255,0.04) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.04) 87.5%, rgba(255,255,255,0.04)),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 2%, transparent 2.5%, transparent 97%, rgba(255,255,255,0.03) 97.5%, rgba(255,255,255,0.03));
+  background-size: 60px 35px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* ===============================
+   HEADING
+================================ */
+.heading {
+  position: absolute;
+  top: 28px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===============================
+   MOUSE LIGHT EFFECT
+================================ */
+.mouse-light {
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.12),
+    transparent 60%
+  );
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+/* ===============================
+   CARD LAYOUT
+================================ */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+/* ===============================
+   CARD
+================================ */
+.card-container {
+  perspective: 1600px;
+}
+
+.card {
+  width: 360px;
+  height: 280px; /* vertically bigger */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.9s cubic-bezier(.4,.2,.2,1);
+  cursor: pointer;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* ===============================
+   GLASS CARD STYLE
+================================ */
+.card-face {
+  position: absolute;
+  inset: 0;
+  padding: 28px;
+  border-radius: 28px;
+  backface-visibility: hidden;
+
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(36px);
+  -webkit-backdrop-filter: blur(36px);
+
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 40px 90px rgba(0,0,0,0.6);
+}
+
+/* luxury shine */
+.card-face::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: linear-gradient(
+    130deg,
+    transparent,
+    rgba(255,255,255,0.45),
+    transparent
+  );
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* ===============================
+   FRONT
+================================ */
+.front h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.front p {
+  margin: 16px 0;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+.front span {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+/* ===============================
+   BACK
+================================ */
+.back {
+  transform: rotateY(180deg);
+  font-size: 16px;
+  line-height: 2;
+}
+
+.back p {
+  margin: 10px 0;
+}
+
