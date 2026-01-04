@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <title>Typing Speed Game</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+<!-- CONFETTI LAYER -->
+<div id="confetti-container"></div>
 
 <div class="app">
 
@@ -20,11 +23,14 @@
     </select>
 
     <select id="time">
-      <option value="30">30s</option>
-      <option value="60" selected>60s</option>
-      <option value="120">120s</option>
+      <option value="30">10s</option>
+      <option value="60" selected>20s</option>
+      <option value="120">30s</option>
     </select>
   </div>
+
+  <!-- TIMER TEXT -->
+  <p id="timeLeftText" class="timer-text">Time Left: 60s</p>
 
   <!-- PROGRESS -->
   <div class="progress">
@@ -54,6 +60,6 @@
 
 </div>
 
-<script src="./app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
