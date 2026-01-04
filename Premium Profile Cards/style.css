@@ -182,3 +182,101 @@ body::before {
   margin: 10px 0;
 }
 
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .cards-wrapper {
+    gap: 40px;
+  }
+
+  .card {
+    width: 320px;
+    height: 260px;
+  }
+
+  .front h2 {
+    font-size: 26px;
+  }
+
+  .front p {
+    font-size: 16px;
+  }
+}
+
+/* Large phones & tablets portrait */
+@media (max-width: 768px) {
+  body {
+    padding: 40px 20px;
+    align-items: flex-start;
+  }
+
+  .heading {
+    position: static;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    height: 260px;
+  }
+
+  .mouse-light {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .card {
+    height: auto;
+    min-height: 240px;
+  }
+
+  .card-face {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .front h2 {
+    font-size: 24px;
+  }
+
+  .front p {
+    font-size: 15px;
+  }
+
+  .front span {
+    font-size: 13px;
+  }
+
+  .back {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .mouse-light {
+    display: none; /* mobile pe performance better */
+  }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+  .front h2 {
+    font-size: 22px;
+  }
+
+  .front p {
+    font-size: 14px;
+  }
+}
