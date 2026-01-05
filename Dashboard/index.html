@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <header>
+      <h1>Smart Dashboard</h1>
+      <div id="time"></div>
+    </header>
+
+    <!-- Focus -->
+    <div class="card">
+      <h3>🎯 Today’s Focus</h3>
+      <input type="text" id="focusInput" placeholder="What is your main focus today?">
+      <button onclick="saveFocus()">Save</button>
+      <p id="focusDisplay"></p>
+    </div>
+
+    <!-- Tasks -->
+    <div class="card">
+      <h3>✅ Tasks</h3>
+      <input type="text" id="taskInput" placeholder="Add a task">
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Mood -->
+    <div class="card">
+      <h3>😌 Mood</h3>
+      <select id="moodSelect" onchange="saveMood()">
+        <option value="">Select mood</option>
+        <option value="Focused">Focused 🎯</option>
+        <option value="Happy">Happy 😊</option>
+        <option value="Tired">Tired 😴</option>
+        <option value="Stressed">Stressed 😖</option>
+      </select>
+      <p id="moodDisplay"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
